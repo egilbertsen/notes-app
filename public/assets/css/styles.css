@@ -12,11 +12,10 @@ h1 {
 
 h3 {
   color: #117A65;
-  font-size: 1.4rem;
+  
 }
-
-.jumbotron {
-  background-color:#000019;
+.animDiv {
+  margin-top: calc(8px + 7vw);
 }
 
 .navbar a {
