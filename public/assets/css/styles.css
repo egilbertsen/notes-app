@@ -2,7 +2,34 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #000019;
 }
+
+h1 {
+  font-family: 'Rakkas', cursive;
+  color:#f4f3e8;
+}
+
+h3 {
+  color: #117A65;
+  font-size: 1.4rem;
+}
+
+.jumbotron {
+  background-color:#000019;
+}
+
+.navbar a {
+  font-family: 'Rakkas', cursive;
+  color: #117A65;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.navbar a:hover {
+  background-color: #000033;
+}
+
 
 .save-note {
   display: none;
@@ -13,10 +40,13 @@ html, body {
   margin-right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
+  color:#f4f3e8; 
 }
 
 .note-textarea, .note-title {
-  color: #000000;
+  color: "#AF601A";
+  background-color: #f4f3e8;
+  padding: 20px;
   width: 100%;
   outline: none;
   border: none;
@@ -26,16 +56,18 @@ html, body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  color: #000013;
 }
 
 .note-title {
-  height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  color: #AF601A;
+  font-family: 'Rakkas', cursive;
 }
 
 .note-title:read-only, .note-textarea:read-only {
-  color: #757575;
+  color: #000033;
 }
 
 .list-container .card {
@@ -43,10 +75,12 @@ html, body {
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  background-color: #000019;
+  color: #f4f3e8
 }
 
 .list-container {
-  padding-left: 0;
+  padding-left: 10;
 }
 
 .list-container .list-group,
@@ -62,9 +96,49 @@ html, body {
   cursor: pointer;
 }
 
+
 .list-container .list-group-item {
   border-left: none;
   border-right: none;
   padding: 20px;
   cursor: pointer;
+}
+
+.list-group-item {
+  opacity: 0;
+  border-radius: 8px;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-color: #000019;
+}
+
+.list-group-item:hover {
+  font-weight: 900;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.delete-note {
+  color: #BF6262;
+}
+
+.delete-note:hover {
+  color:#984E4E;
+}
+
+.save-note {
+  color: #f4f3e8
+}
+
+.new-note {
+  color: #f4f3e8
 }
