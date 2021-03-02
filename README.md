@@ -1,5 +1,5 @@
 # notes-app
-Quickly record your thoughts 
+Quickly record your thoughts and save them to a convenient and enjoyable interface
 
 
 ## technologies used
@@ -14,7 +14,10 @@ The following npm packages are required:
 
 ## app screenshots
 
-The following user
+The user is presented with the following interfaces:
+
+ * The user lands on a homepage, which is revealed with a sliding bar animation: ![Notes Homepage](media/NoteHome.png)
+ * The user can create and save notes to their list: ![Example Note](media/NoteExample.png)
 
 ## user story
 
